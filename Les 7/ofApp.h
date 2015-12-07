@@ -1,0 +1,28 @@
+#pragma once
+
+#include "ofMain.h"
+#include "ofxGUI.h"
+
+class ofApp : public ofBaseApp{
+
+	public:
+		void setup();
+		void update();
+		void draw();
+
+		void keyPressed(int key);
+		
+    
+        bool drawGrid;
+    
+    ofxPanel gui;
+    ofParameter<float> rotateSpeedX;
+    ofParameter<float> rotateSpeedY;
+    ofParameter<float> rotateSpeedZ;
+    
+    float rotationX;
+    float rotationY;
+    float rotationZ;
+
+		
+};
